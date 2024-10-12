@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<!--I don't know what flexbox or grid are used for-->
 <html>
 <head>
 <style>
 .flex-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: nowrap;
   background-color: DodgerBlue;
 }
 
@@ -20,16 +19,22 @@
 </style>
 </head>
 <body>
-
-<h1>The flex-direction Property</h1>
-
-<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom):</p>
+<h1>Flexible Boxes</h1>
 
 <div class="flex-container">
-  <div>1</div>
-  <div>2</div>
-  <div>3</div>  
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>  
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>  
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
+  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
 </div>
+
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
 
 </body>
 </html>
