@@ -5,36 +5,60 @@
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  background-color: DodgerBlue;
+  background-color: Coral;
+  flex-direction: column;
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
-  width: 100px;
+  background-color: #45b39d;
   margin: 10px;
   text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  font-size: 20px;
+  
 }
+.h1 {
+  text-align: right;
+}
+img {
+  border-radius: 8px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 </style>
 </head>
 <body>
-<h1>Flexible Boxes</h1>
 
 <div class="flex-container">
+  <div><h1>_FlexBox_</h1></div>
   <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>  
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>  
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
-  <div>Content in flexbox is laid in rows and colunms, based on the maker's preferences. They can be tiled or form different sized flex items(item boxes) that contain words, images or other things.</div>
+  <div><img src="https://terrierplanet.com/wp-content/uploads/2022/04/Grey-Brindle-Cairn-Terrier.jpg" style="width:100%"></div>
+  <div><p>They resize to <b>browser</b> windows based on given parameters in the head of the html page </p></div>  
+  <div><strong>.flex-container > div {} needed to add into the head element so flexbox element is usable</strong></div>
+  <div>display: flex; /* or inline-flex */ <b>defines flex container</b></div>
+  <div>flex-direction: row | row-reverse | column | column-reverse;<b>what direction the flex container is placed</b></div>  
+  <div>flex-flow: column wrap;<b>shorthand for flex direction and wrap together</b></div>
+  <div>flex-wrap: nowrap | wrap | wrap-reverse;<b>wether flexboxes will try and fit onto a single line, or multiple</b></div>
+  <div>justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;<b>wether the flexboxes are aligned left, right or</b> </div>
+  <div>align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;<b>how flexobjects align on Y axis</b></div>
+  <div>align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;<b>how flexobjects align on X axis</b> </div>
+  <div> display: flex; {
+  ...
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;<b>defines flexbox gaps</b> 
+        }</div>
+  <div><strong>.item {} needed to add into the head element so flexbox element is usable</strong></div>
+  <div>order: 5; /* default is 0 */ <b>what order the boxes appear</b></div>
+  <div>flex-grow: 4; /* default 0 */<b>how large given box is</b></div>
+  <div>flex-shrink: 3; /* default 1 */<b>how much an item can shrink</b></div>
+  <div>flex-basis:  | auto; /* default auto */<b>default size before item is distributed</b></div>
+  <div>flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]<b>shorthand for flex-grow, flex-shrink and flex-basis combined</b></div>
+  <div>align-self: auto | flex-start | flex-end | center | baseline | stretch;<b>This allows the default alignment (or the one specified by align-items) to be overridden for individual flex items.</b></div>
+  <div>___</div>
 </div>
-
-<p>Try to resize the browser window.</p>
-<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
-<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
-
 </body>
 </html>
