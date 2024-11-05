@@ -22,6 +22,7 @@ function adding(){
     else{
       document.getElementById('result').innerHTML = "Unspecified";
         }
+      finalNum = finalNum - 1;
       iteNums = iteNums.join(" + ")
       document.getElementById('result').innerHTML = "Input: " + addingNum + " (N = "+ iteNums + ")";
       document.getElementById('result2').innerHTML = "Answer = " + finalNum;
