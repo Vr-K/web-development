@@ -1,0 +1,22 @@
+Task 1
+
+Make a program that asks the user for a word or phrase. As a result, the program tells you how many L letters the input contained.
+
+Input: Hello World!
+Output: Hello World contains 3xL characters
+
+Task 2
+Make a program that asks the user for a word or phrase. As a result, the program tells you how many vowels the input contained.
+Vowels are (aeiouy[åäö])
+
+Input: Hello World!
+Output: Hello World! contains 3 vowels.
+
+Task 3
+Make a program that asks the user for a word or phrase. As a result, the program tells you how is input palindrome or not.
+
+Input: Madam
+Output: Madam is palindrome.
+
+Input: Padam
+Output: Padam is NOT palindrome.
