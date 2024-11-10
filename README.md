@@ -1,2 +1,2 @@
 # web-development
-Depository for IIT Web Dev homework related projects
+Depository for IIT Web Dev homework related school projects
